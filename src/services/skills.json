@@ -38,7 +38,7 @@
     {
         "id": 500,
         "title": "",
-        "subtitle": "",
+        "subtitle": "Example",
         "description": "Currently, working to rewrite Acoustic Analytics in React in order to incorporate it with other product offerings.",
         "year": 2014,
         "imageUrl": "../images/React.png",

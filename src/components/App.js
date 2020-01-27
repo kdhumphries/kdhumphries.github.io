@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header';
 import Skills from './Skill/Skills';
 import Footer from './Footer';
+import ReactCharts from './acoustic-react-charts/ReactCharts';
+
+const Landing = () => (
+    <div>
+        <main className="my-5">
+            <Skills />
+        </main>
+    </div>
+);
 
 export default class App extends Component {
 
@@ -16,11 +26,16 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <Header title={this.state.title} />
-                <main className="my-5">
-                    <Skills />
-                </main>
-                <Footer title={this.state.title} />
+                <BrowserRouter>
+                    <div>
+                        <Header title={this.state.title} />
+                        <Switch>
+                            <Route exact path="/" component={Landing} />
+                            <Route path="/ReactCharts" component={ReactCharts} />
+                        </Switch>
+                        <Footer title={this.state.title} />
+                    </div>
+                </BrowserRouter>
             </div>
         );
     }

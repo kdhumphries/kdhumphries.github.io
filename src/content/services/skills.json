@@ -1,0 +1,47 @@
+[
+    {
+        "id": 100,
+        "title": "",
+        "subtitle": "",
+        "description": "Team lead for Acoustic Analytics UI team (formerly IBM Digital Analytics). Guided the team in writing clean, semantic HTML. Created numerous business sites over the past 20 years including Vector Risk & Safety, CSHI, and University Avenue Church",
+        "year": 2016,
+        "imageUrl": "../images/html5.png",
+        "rating": 5
+    },
+    {
+        "id": 200,
+        "title": "",
+        "subtitle": "",
+        "description": "Twice rebranded Acoustic Analytics utilizing SASS. In the past, created my own grid system prior to Bootstrap.",
+        "year": 2001,
+        "imageUrl": "../images/css.png",
+        "rating": 5
+    },
+    {
+        "id": 300,
+        "title": "",
+        "subtitle": "",
+        "description": "Utilized vanilla js to create a simple interactive site for an author with previews of books.",
+        "year": 2008,
+        "imageUrl": "../images/js.png",
+        "rating": 4.5
+    },
+    {
+        "id": 400,
+        "title": "",
+        "subtitle": "",
+        "description": "Helped develop the initial SAAS offering of Acoustic Analytics using Angular.",
+        "year": 2014,
+        "imageUrl": "../images/Angular.png",
+        "rating": 4.2
+    },
+    {
+        "id": 500,
+        "title": "",
+        "subtitle": "",
+        "description": "Currently, working to rewrite Acoustic Analytics in React in order to incorporate it with other product offerings.",
+        "year": 2014,
+        "imageUrl": "../images/React.png",
+        "rating": 2.6
+    }
+]

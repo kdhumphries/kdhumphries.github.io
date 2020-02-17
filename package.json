@@ -4,8 +4,10 @@
   "description": "A personal portfolio site built using concepts of Douglas Minnaar's react movie cards and IBM Carbon Design Language",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kdhumphries/kdhumphries.github.io.git"
+    "url": "https://github.com/kdhumphries/kdhumphries.github.io"
   },
+  "homepage" : "http://kdhumphries.github.io",
+  "license": "MIT",
   "scripts": {
     "build": "react-scripts build",
     "ci-check": "yarn format:diff",
@@ -58,12 +60,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"

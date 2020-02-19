@@ -6,13 +6,20 @@
     "type": "git",
     "url": "https://github.com/kdhumphries/kdhumphries.github.io"
   },
-  "homepage": "http://kdhumphries.github.io",
+  "homepage": "http://kdhumphries.github.io/kdh",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -d",
-    "serve": "webpack -p && live-server ./public",
-    "serve:dev": "webpack-dev-server --open",
-    "start": "npm run serve"
+    "build": "react-scripts build",
+    "ci-check": "yarn format:diff",
+    "clean": "yarn cache clean && yarn install",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"**/*.{js,md,scss}\"",
+    "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
+    "format:staged": "prettier --write",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@carbon/charts": "0.26.0",
@@ -27,6 +34,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "event-stream": "^4.0.1",
+    "gh-pages": "^2.2.0",
     "graphql": "^14.3.1",
     "prop-types": "^15.6.0",
     "react": "^16.8.6",

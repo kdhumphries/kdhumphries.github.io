@@ -17,7 +17,6 @@
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="app"></div>
-<script src="bundle.js"></script>
+<div id="root"></div>
 </body>
 </html>

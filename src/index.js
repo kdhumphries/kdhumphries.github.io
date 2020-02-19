@@ -23,7 +23,7 @@ ReactDOM.render(
       <App />
     </Router>
   </ApolloProvider>,
-  document.getElementById('root')
+  document.getElementById('app')
 );
 
 serviceWorker.unregister();
